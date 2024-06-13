@@ -1,0 +1,329 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Patrick Hand',sans-serif;
+  /* background: url(/Assests/backgroundmain.png); */
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.todocontainer{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+
+}
+
+h1{
+  position: absolute;
+  top: -33px;
+  left: 60px;
+  font-size: 45px;
+  background: none;
+  font-family:'Patrick Hand','Courier New', Courier, monospace;
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+
+}
+
+.character{
+  background: none;
+  position: absolute;
+  top:-30px;
+  right: -20px;
+}
+.svgbackgrounddiv{
+  position: relative;
+}
+
+
+.underline{
+  position: absolute;
+  width: 250px;
+  top: 20px;
+  right: 180px;
+  background:none;
+}
+
+.todotitle{
+  position: absolute;
+  width: 140px;
+  left: 30px;
+  top: 100px;
+  background: none;
+
+
+}
+
+.todocontainer p{
+position: absolute;
+top: 118px;
+left: 40px;
+background: none;
+font-family: 'Patrick Hand','Courier New', Courier, monospace;
+font-size: 25px;
+color: #8f6161;
+font-style: italic;
+}
+
+.todocontainer .p2{
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  background: none;
+  font-family:'Patrick Hand','Courier New', Courier, monospace;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  font-stretch:narrower;
+  color: rgb(68, 68, 68);
+  z-index: 3;
+  }
+
+  h2{
+    position: absolute;
+    top: 80px;
+    left: 140px;
+    background: none;
+    font-family:'Just Another Hand', 'Patrick Hand','Courier New', Courier, monospace;
+    font-size: 40px;
+    font-stretch:narrower;
+    font-style: italic;
+    color: rgb(139, 230, 238);
+    }
+
+    .flower{
+      position: absolute;
+      top: 95px;
+      left: 280px;
+      background: none;
+      width: 35px;
+      z-index: 2;
+    }
+  
+.todoInput{
+  position: absolute;
+  top: 120px;
+  left: 180px;
+  background: none;
+  border: none;
+  padding: 5px 20px;
+  border-bottom: 2px dotted black;
+  z-index: 2;
+  font-size: 20px;
+}
+
+.todoInput:focus{
+  outline: none;
+}
+
+.awesomebg{
+  position: absolute;
+  top: 55px;
+  left: 150px;
+  z-index: 1;
+  background: none;
+}
+
+.star{
+  position: absolute;
+  top: 170px;
+  left: 30px;
+  rotate: 30deg;
+  width: 30px;
+  z-index: 1;
+  background: none;
+}
+
+.done{
+ 
+    position: absolute;
+    top: 170px;
+    left: 340px;
+    color: rgb(69, 69, 69);
+    z-index: 1;
+    background: none;
+    letter-spacing: 2px;
+ 
+}
+
+.tododivcontainer{
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: none;
+  /* border: 3px solid rgba(0, 0, 0, 0.13); */
+  top: 220px;
+  left: 25px;
+  background: #F8FAF7;
+}
+
+
+/* .todo_div{
+  
+  margin-top: 10px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgb(57, 57, 57);
+  border-bottom: 2px dotted black;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 20px;
+
+
+  
+  
+}
+
+.todo_checkbox{
+  width: 40px;
+}
+
+#todos{
+  /* display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  gap: 5px; */
+  /* background-color: white; */
+  /* margin-top: 10px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgb(57, 57, 57);
+  border-bottom: 2px dotted black;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap:20px;
+  border: 2px solid red;
+  justify-content: space-between; */
+
+} */
+
+
+#todovalues{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px red;
+
+}
+
+
+#todoscontainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.delete_button{
+  border:none;
+  opacity: 0.5;
+  transition: opacity 200ms ease-in;
+  width: 30px;
+  background: none;
+  margin-left: 20px;
+  /* position: absolute;
+  top:15px;
+  right:30px; */
+}
+
+.delete_button:hover{
+  opacity: 1;
+
+  
+}
+
+.checkbox{
+  background: none;
+  display:block;
+  /* position: absolute;
+  top: 15px;
+  left: 10px; */
+  border-radius: 1000px;
+  width: 20px;
+  height:20PX;
+  
+}
+
+/* input[type=checkbox]:checked + .todo_value.strikethrough{
+  text-decoration: line-through;
+} */
+
+.todo_value{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+
+  background: none;
+  background-color: #F8FAF7;
+  padding: 5px ;
+  border-bottom: 2px dotted rgba(0, 0, 0, 0.675) ;
+  text-align: center;
+  font-size: 25px;
+  letter-spacing: 2px;
+  padding: 10px;
+}
+
+
+#todosdiv{
+  display: block;
+  position: relative;
+  width: 120%;
+  margin-left: 80px;
+  max-height: 350px;
+  overflow: auto;
+
+}
+
+#todosdiv::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar for webkit browsers (Chrome, Safari, etc.) */
+}
+
+#todoscontainer{
+  background: none;
+  width: 80%;
+}
+
+.checkbox:checked + .todotxt {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+
+@media screen and (max-width: 768px) {
+  html {
+    zoom: 0.9; /* Adjust the zoom value as needed */
+  }
+};
+
+@media screen and (max-width: 480px) {
+  html {
+    zoom: 0.6; /* Adjust the zoom value as needed */
+  }
+};
+
+@media (max-width:360){
+  html{
+    zoom: 0.2;
+  }
+}
