@@ -28,8 +28,8 @@
 //    }
 // };
 // });
-
-
+const todoinputanim = document.getElementById('todoinputanim')
+const noTodoInput = document.getElementById('noinputcharacter')
 let todoInput = document.getElementById('todoinput');
 const todoDiv = document.querySelector('#todosdiv');
 const todo_value= document.querySelector('.todo_value');
@@ -116,10 +116,13 @@ todoInput.addEventListener('keypress', (event) => {
 
     if (todoValue !== '') {
       addTodo(todoValue);
+      noTodoInput.style.display= 'none';
+      todoinputanim.style.display='block';
 
       todoInput.value = '';
     } else{
-      alert("Enter todo value!!")
+      noTodoInput.style.display= 'block';
+      todoinputanim.style.display='none';
     }
   }
 });
